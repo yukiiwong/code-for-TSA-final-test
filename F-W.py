@@ -34,14 +34,6 @@ while True:
     xn_2 = xn[1]
     xn[0] = (1 - b[0])*xn[0] + b[0]*yn[0]
     xn[1] = 3000 - xn[0]
-    if xn_1 == 0 :
-        pass
-    elif abs((xn[0] - xn_1) / xn_1) < 0.003 :
-        break
-    if b[0] <= 0 or b[0] >= 1:
-        xn[0] = xn_1
-        xn[1] = xn_2
-        break
     print(xn)
 print(xn)
 
